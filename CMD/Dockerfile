@@ -1,3 +1,3 @@
 FROM almalinux:latest
 RUN yum install nginx -y
-CMD [ "executable" ]
+CMD [ "nginx", "-g", "daemon off;" ]
